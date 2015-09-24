@@ -35,32 +35,15 @@ void Array::setAry(void){
             array[i][j]=rand()%90+10;
         }
     }
-    aToStr();
+    toString();
 }
 
-void Array::aToStr(){
+void Array::toString(){
     cAry = new char[nRows*nCols];
     for(int i=0; i<nRows; i++){
         for(int j=0; j<nCols; j++){
             cAry[i*nCols+j] = array[i][j];
         }
     }
-    output();
-}
-
-void Array::output(void){
-    std::cout<<"Int Array: \n";
-    for(int i=0;i<nRows;i++){
-        for(int j=0; j<nCols;j++){
-            std::cout<<array[i][j]<<" ";
-        }
-        std::cout<<std::endl;
-    }
-    std::cout<<"Char Array: \n";
-    for(int i=0;i<nRows;i++){
-        for (int j=0; j<nCols;j++){
-            std::cout<<cAry[i*nCols+j]-0<<" ";
-        }
-        std::cout<<std::endl;
-    }
+    toPrint();
 }

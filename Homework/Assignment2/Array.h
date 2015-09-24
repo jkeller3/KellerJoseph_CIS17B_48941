@@ -2,7 +2,7 @@
  * File:   Array.h
  * Author: Joseph Keller
  *
- * Created on September 9, 2015, 4:10 PM
+ * Created on September 20, 2015, 5:06 PM
  */
 
 #ifndef ARRAY_H
@@ -20,8 +20,11 @@ class Array{
         ~Array();
         int** getAry();
         void setAry();
-        void aToStr();
-        void output();
+        void toString();
+};
+
+class ToPrint:public Array{
+
 };
 
 #endif	/* ARRAY_H */

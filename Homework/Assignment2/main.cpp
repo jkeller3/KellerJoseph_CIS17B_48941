@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Joseph Keller
  *
- * Created on September 9, 2015, 3:12 PM
+ * Created on September 20, 2015, 5:05 PM
  */
 #include <QtWidgets/QApplication>
 #include <QtGui/QLabel>
