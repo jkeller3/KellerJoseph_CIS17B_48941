@@ -14,10 +14,11 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QLabel *label = new QLabel("Hello Qt!");
-    label->show();
     srand(time(NULL));
-    Array a(5,10);
+    Array a(5,5);
+    QLabel *label = new QLabel(a.output());
+    label->show();
+
 
     return app.exec();
 }

@@ -1,7 +1,4 @@
 #include <QLabel>
-#include <iostream>
-#include <cstdlib>
-#include <stdlib.h>
 #include "array.h"
 
 Array::Array(){
@@ -42,7 +39,9 @@ void Array::aToStr(){
     for(int i=0; i<nRows; i++){
         for(int j=0; j<nCols; j++){
             label+=QString::number(array[i][j]);
+            label+=" ";
         }
+        label+="\n";
     }
 }
 

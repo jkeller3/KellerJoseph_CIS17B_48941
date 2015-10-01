@@ -4,7 +4,7 @@
 class fillArray: public array
 {
 public:
-    fillArray();
+    virtual void fillArray() = 0;
 };
 
 #endif // FILLARRAY_H

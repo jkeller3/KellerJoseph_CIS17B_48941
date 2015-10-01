@@ -8,24 +8,23 @@
 #ifndef ARRAY_H
 #define	ARRAY_H
 
-class Array{
+class Array : virtual fillarray{
     private:
         int nRows;
         int nCols;
         int **array;
-        char *cAry;
+
     public:
         Array();
         Array(int,int);
         ~Array();
         int** getAry();
         void setAry();
-        void toString();
+        void aToStr();
+        QString output();
 };
 
-class ToPrint:public Array{
-
-};
+class ToPrint:public Array;
 
 #endif	/* ARRAY_H */
 

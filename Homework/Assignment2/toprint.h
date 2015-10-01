@@ -3,8 +3,10 @@
 
 class toPrint: public array
 {
-public:
-    toPrint();
+    private:
+    public:
+        toPrint();
+        QString output();
 };
 
 #endif // TOPRINT_H
