@@ -4,16 +4,19 @@
  *
  * Created on September 9, 2015, 4:10 PM
  */
+#include <QString>
 
 #ifndef ARRAY_H
 #define	ARRAY_H
+
+
 
 class Array{
     private:
         int nRows;
         int nCols;
         int **array;
-        char *cAry;
+        QString label;
     public:
         Array();
         Array(int,int);
@@ -21,7 +24,7 @@ class Array{
         int** getAry();
         void setAry();
         void aToStr();
-        void output();
+        QString output();
 };
 
 #endif	/* ARRAY_H */

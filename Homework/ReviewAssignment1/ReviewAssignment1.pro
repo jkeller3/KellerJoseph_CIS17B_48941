@@ -8,13 +8,11 @@ QT       += core
 
 QT       += gui
 
+greaterThan(QT_MAJOR_VERSION, 4): QT +=widgets
+
 TARGET = ReviewAssignment1
-CONFIG   += console
-CONFIG   -= app_bundle
-CONFIG   += Qt
 
 TEMPLATE = app
-
 
 SOURCES += \
     main.cpp \

@@ -4,8 +4,8 @@
  *
  * Created on September 20, 2015, 5:05 PM
  */
-#include <QtWidgets/QApplication>
-#include <QtGui/QLabel>
+#include <QApplication>
+#include <QLabel>
 #include <cstdlib> //srand
 #include <time.h> //time
 #include "array.h"

@@ -1,3 +1,4 @@
+#include <QLabel>
 #include <iostream>
 #include <cstdlib>
 #include <stdlib.h>
@@ -19,7 +20,6 @@ Array::~Array(void){
     for(int i=0;i<nRows;i++){
         delete [] array[i];
     }
-    delete [] cAry;
     delete [] array;
 }
 
@@ -39,28 +39,13 @@ void Array::setAry(void){
 }
 
 void Array::aToStr(){
-    cAry = new char[nRows*nCols];
     for(int i=0; i<nRows; i++){
         for(int j=0; j<nCols; j++){
-            cAry[i*nCols+j] = array[i][j];
+            label+=QString::number(array[i][j]);
         }
     }
-    output();
 }
 
-void Array::output(void){
-    std::cout<<"Int Array: \n";
-    for(int i=0;i<nRows;i++){
-        for(int j=0; j<nCols;j++){
-            std::cout<<array[i][j]<<" ";
-        }
-        std::cout<<std::endl;
-    }
-    std::cout<<"Char Array: \n";
-    for(int i=0;i<nRows;i++){
-        for (int j=0; j<nCols;j++){
-            std::cout<<cAry[i*nCols+j]-0<<" ";
-        }
-        std::cout<<std::endl;
-    }
+QString Array::output(void){
+    return label;
 }
