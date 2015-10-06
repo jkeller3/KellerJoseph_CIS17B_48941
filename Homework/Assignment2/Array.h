@@ -1,30 +1,26 @@
-/*
- * File:   Array.h
- * Author: Joseph Keller
- *
- * Created on September 20, 2015, 5:06 PM
- */
-
+#include <QString>
+#include "fillarray.h"
 #ifndef ARRAY_H
 #define	ARRAY_H
 
-class Array : virtual fillarray{
+
+//Base Class
+class Array: public fillArray{
     private:
         int nRows;
         int nCols;
-        int **array;
-
+        float **array;
+    protected:
+        QString label;
     public:
         Array();
         Array(int,int);
         ~Array();
-        int** getAry();
+        float** getAry();
         void setAry();
-        void aToStr();
-        QString output();
+        void toString();
 };
 
-class ToPrint:public Array;
 
 #endif	/* ARRAY_H */
 

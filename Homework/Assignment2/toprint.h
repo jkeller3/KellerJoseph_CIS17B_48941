@@ -1,11 +1,11 @@
+#include <QString>
+#include "array.h"
 #ifndef TOPRINT_H
 #define TOPRINT_H
 
-class toPrint: public array
-{
-    private:
+//Derived class
+class toPrint: public Array {
     public:
-        toPrint();
         QString output();
 };
 

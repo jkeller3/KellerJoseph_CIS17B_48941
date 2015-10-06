@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-09-23T17:04:19
+# Project created by QtCreator 2015-10-06T14:44:39
 #
 #-------------------------------------------------
 
@@ -10,15 +10,14 @@ QT       += gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT +=widgets
 
-TARGET = Assignment2
+TARGET = ReviewAssignment1
 
 TEMPLATE = app
 
-
-SOURCES += main.cpp \
+SOURCES += \
+    main.cpp \
     array.cpp \
-    toprint.cpp \
-    fillarray.cpp
+    toprint.cpp
 
 HEADERS += \
     array.h \

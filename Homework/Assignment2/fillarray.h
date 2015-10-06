@@ -1,10 +1,11 @@
 #ifndef FILLARRAY_H
 #define FILLARRAY_H
 
-class fillArray: public array
+//Abstract Class
+class fillArray
 {
 public:
-    virtual void fillArray() = 0;
+    virtual void setAry()=0;
 };
 
 #endif // FILLARRAY_H

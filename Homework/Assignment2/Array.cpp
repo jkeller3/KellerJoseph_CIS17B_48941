@@ -1,8 +1,10 @@
 #include <QLabel>
+#include <iomanip>
+#include <iostream>
 #include "array.h"
 
 Array::Array(){
-    nRows=10;
+    nRows=5;
     nCols=5;
     this->setAry();
 }
@@ -20,11 +22,24 @@ Array::~Array(void){
     delete [] array;
 }
 
-int** Array::getAry(void){
+float** Array::getAry(void){
     return array;
 }
 
-void fillArray::aToStr(){
+void Array::setAry(void){
+    array=new float*[nRows];
+    for(int i=0;i<nRows;i++){
+        array[i]=new float[nCols];
+        for (int j=0; j<nCols;j++){
+            int k = rand()%9000+1000;
+            std::cout<<std::fixed<<std::showpoint<<std::setprecision(2);
+            array[i][j]=static_cast<float>(k/100.0);
+        }
+    }
+    toString();
+}
+
+void Array::toString(){
     for(int i=0; i<nRows; i++){
         for(int j=0; j<nCols; j++){
             label+=QString::number(array[i][j]);

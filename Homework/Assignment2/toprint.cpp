@@ -1,10 +1,5 @@
 #include "toprint.h"
-#include "array.h"
-toPrint::toPrint()
-{
 
-}
-
-QString Array::output(void){
+QString toPrint::output(void){
     return label;
 }
