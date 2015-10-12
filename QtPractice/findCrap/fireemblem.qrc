@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FireEmblem.txt</file>
+    </qresource>
+</RCC>
