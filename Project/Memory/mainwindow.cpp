@@ -1,4 +1,5 @@
 #include <QMessageBox>
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -7,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //this->setFixedSize(500,500);
+    this->setStyleSheet("QMainWindow {background-color: #5555ff;}");
 }
 
 MainWindow::~MainWindow()
