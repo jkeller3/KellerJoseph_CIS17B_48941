@@ -2,6 +2,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "gamewindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -48,3 +49,8 @@ void MainWindow::on_actionClose_triggered()
 }
 
 
+
+void MainWindow::on_pushButton_3_clicked(){
+    GameWindow g;
+    g.show();
+}
